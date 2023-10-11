@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using EmployeeManagement.Data.Common;
+
+Common.CreateTableAsync("test").GetAwaiter().GetResult();
+Console.ReadKey();
